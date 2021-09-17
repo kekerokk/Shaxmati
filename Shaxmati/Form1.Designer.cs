@@ -61,7 +61,6 @@ namespace Shaxmati
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(850, 850);
             this.dataGridView1.TabIndex = 0;
-            //this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -105,9 +104,9 @@ namespace Shaxmati
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1055, 550);
+            this.button1.Location = new System.Drawing.Point(886, 503);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(244, 70);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;

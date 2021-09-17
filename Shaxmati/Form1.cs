@@ -20,16 +20,33 @@ namespace Shaxmati
         private void button1_Click(object sender, EventArgs e)
         {
             dataGridView1.RowCount = 8;
-            for (int i = 0; i < 8; i++) 
+            for (int ColumNum = 0; ColumNum < 8; ColumNum++) 
             {
-                dataGridView1.Rows[i].Height = 100;
-                dataGridView1.Columns[i].Width = 100;
+                for (int RowNum = 0; RowNum < 8; RowNum++)
+                {
+                    if (ColumNum % 2 == 0)
+                    {
+                        if (RowNum % 2 == 0)
+                            dataGridView1.Rows[ColumNum].Cells[RowNum].Style.BackColor = Color.Brown;
+                        else
+                            dataGridView1.Rows[ColumNum].Cells[RowNum].Style.BackColor = Color.Black;
+                    }
+                    else
+                    {
+                        if (RowNum % 2 == 0)
+                            dataGridView1.Rows[ColumNum].Cells[RowNum].Style.BackColor = Color.Black;
+                        else
+                            dataGridView1.Rows[ColumNum].Cells[RowNum].Style.BackColor = Color.Brown;
+                    }
+                }
+                dataGridView1.Rows[ColumNum].Height = 100;
+                dataGridView1.Columns[ColumNum].Width = 100;
             }
 
             
         }
 
-        private void setupChessField()
+        /*private void setupChessField()
         {
                 dataGridView1.RowCount = 8;
                 for (int i = 0; i < 8; i++)
@@ -37,7 +54,7 @@ namespace Shaxmati
                     dataGridView1.Rows[i].Height = 100;
                     dataGridView1.Columns[i].Width = 100;
                 }
-        }
+        }*/
 
         /*private void button1_Click(object sender, EventArgs e)
         {
